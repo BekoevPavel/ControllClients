@@ -1,0 +1,19 @@
+﻿<Window x:Class="ControllClients.Models.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControllClients.Models"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="350" Width="350">
+    <ListBox>
+        <TextBlock FontSize="20" Margin="0,0,0,20">Добавить клиента</TextBlock>
+        <TextBlock FontSize="12">ФИО</TextBlock>
+        <TextBox Width="200" FontSize="16" x:Name="input_Name" ></TextBox>
+        <TextBlock FontSize="12">Купил</TextBlock>
+        <TextBox Width="200" FontSize="16" x:Name="input_Buy"></TextBox>
+        <Button Margin="200,100,0,0" Width="72" Height="21" Click="Button_Click">
+            Добавить
+        </Button>
+    </ListBox>
+</Window>

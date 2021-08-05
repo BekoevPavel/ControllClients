@@ -1,0 +1,21 @@
+﻿<Window x:Class="ControllClients.Models.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ControllClients.Models"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="300" Width="300" Loaded="Window_Loaded">
+    
+    <ListBox Name="phonesList"  >
+       
+        <TextBlock FontWeight="Bold" x:Name="t_index" Text="Заказ №" Margin="0,0,0,10" />
+        <TextBlock  Text="ФИО" IsEnabled="False"  />
+        <TextBox x:Name="input_Name" Width="200" FontSize="16 "></TextBox>
+        <TextBlock  Text="Купил" />
+        <TextBox  x:Name="input_Buy" Width="200" FontSize="16 "></TextBox>
+        <Button Click="Button_Click" Margin="202,100,0,0">OK</Button>
+        
+        
+    </ListBox>
+</Window>
